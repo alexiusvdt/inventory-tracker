@@ -32,7 +32,7 @@
 * As a user, I want to be able to click a button to sell a pound of coffee beans. This should decrease the number of pounds left by 1. The number of pounds in a sack of coffee beans should not be able to go below 0.
 
 ## Component Diagram
-![Component Diagram](./AverysOrganics.png)
+![Component Diagram](./design.png)
 
 ### Running the Application
 
