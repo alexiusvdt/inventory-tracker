@@ -4,8 +4,6 @@ import PropTypes from "prop-types";
 function ReusableForm(props) {
   return (
     <React.Fragment>
-      {/* 
-      stock: event.target.roast.value, */}
       <form onSubmit={props.formSubmissionHandler}>
         <input
           type='text'

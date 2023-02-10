@@ -1,6 +1,6 @@
 import React from "react";
-// import NewBeanForm from "./NewBeanForm";
-// import EditBeanForm from './EditBeanForm';
+import NewBeanForm from "./NewBeanForm";
+import EditBeanForm from './EditBeanForm';
 import BeanDetail from "./BeanDetail";
 import BeanList from "./BeanList";
 
@@ -27,14 +27,14 @@ class BeanControl extends React.Component {
     this.setState({selectedBean: selectedBean});
   }
 
-  // handleDeletingBean = (id) => {
-  //   const newMainBeanList = this.state.mainBeanList.filter(bean => bean.id !== id);
-  //   this.setState({
-  //     mainBeanList: newMainBeanList,
-  //     selectedBean: null,
-  //     editing: false
-  //   });
-  // }
+  handleDeletingBean = (id) => {
+    const newMainBeanList = this.state.mainBeanList.filter(bean => bean.id !== id);
+    this.setState({
+      mainBeanList: newMainBeanList,
+      selectedBean: null,
+      editing: false
+    });
+  }
 
   handleEditingBeanInList = (beanToEdit) => {
     const editedMainBeanList = this.state.mainBeanList

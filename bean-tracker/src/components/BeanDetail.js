@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types"
 
 function BeanDetail(props){
-  const { bean} = props; //, onClickingDelete add in once built
+  const { bean, onClickingDelete } = props; 
   
   return (
     <React.Fragment>
@@ -14,7 +14,7 @@ function BeanDetail(props){
         <li>{bean.price}</li>
         <li>{bean.stock}</li>
       </ul>
-      {/* <button onClick={() => onClickingDelete(ticket.id)}>Close Ticket</button> */}
+      <button onClick={() => onClickingDelete(bean.id)}>Delete this Bean</button>
       <hr/>
     </React.Fragment>
   );
@@ -22,8 +22,8 @@ function BeanDetail(props){
 
 BeanDetail.propTypes = {
   bean: PropTypes.object,
-  // onClickingDelete: PropTypes.func,
-  // onClickingEdit: PropTypes.func
+  onClickingDelete: PropTypes.func,
+  onClickingEdit: PropTypes.func
 };
 
 export default BeanDetail;

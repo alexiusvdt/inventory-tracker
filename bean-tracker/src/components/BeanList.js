@@ -26,4 +26,4 @@ BeanList.propTypes = {
   // onBeanSelection: PropTypes.func
 }
 
-export default TicketList;
+export default BeanList;

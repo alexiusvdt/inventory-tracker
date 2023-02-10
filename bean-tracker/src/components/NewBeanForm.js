@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { v4 } from 'uuid';
 import ReusableForm from "./ReusableForm";
 
-function NewTicketForm(props){
+function NewBeanForm(props){
   return(
     <React.Fragment>
       <ReusableForm
@@ -30,4 +30,4 @@ NewBeanForm.propTypes = {
   onNewBeanCreation: PropTypes.func
 };
 
-export default NewBeanForm
+export default NewBeanForm;
