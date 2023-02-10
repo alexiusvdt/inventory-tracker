@@ -13,7 +13,7 @@ function BeanDetail(props){
         <li>{bean.roast}</li>
         <li>{bean.price}</li>
         <li>{bean.stock}</li>
-      </ul>
+      </ul>   
       <button onClick={() => onClickingDelete(bean.id)}>Delete this Bean</button>
       <hr/>
     </React.Fragment>
