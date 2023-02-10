@@ -6,7 +6,7 @@ function BeanList(props){
   return (
     <React.Fragment>
       <hr/>
-      {props.ticketList.map((bean) =>
+      {props.beanList.map((bean) =>
         <Bean 
           // whenBeanClicked = {props.onBeanSelection}
           name={bean.name}

@@ -27,7 +27,7 @@ function EditBeanForm (props) {
 }
 
 EditBeanForm.propTypes = {
-  ticket: PropTypes.object,
+  bean: PropTypes.object,
   onEditBean: PropTypes.func
 };
 

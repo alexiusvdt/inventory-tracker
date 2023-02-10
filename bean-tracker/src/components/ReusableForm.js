@@ -27,6 +27,7 @@ function ReusableForm(props) {
         </select>
         <input 
           type="number"
+          name="stock"
           value="130" />
         <button type='submit'>{props.buttonText}</button>
       </form>
