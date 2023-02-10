@@ -14,7 +14,6 @@ class BeanControl extends React.Component {
       selectedBean: null
     };
   }
-  // this callback is passed under the param newTicket when we call props.onNewTicketCreation({names: names.value...}) 
   handleAddingNewBeanToList = (newBean) => {
     const newMainBeanList = this.state.mainBeanList.concat(newBean);
     this.setState({mainBeanList: newMainBeanList,
@@ -48,7 +47,7 @@ class BeanControl extends React.Component {
   }
 
   handleEditClick = () => {
-    // console.log("HandleEditClick reached!")
+    console.log("HandleEditClick reached!")
     this.setState({editing: true});
   }
 
