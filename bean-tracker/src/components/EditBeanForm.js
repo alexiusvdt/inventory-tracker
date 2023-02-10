@@ -29,6 +29,6 @@ function EditBeanForm (props) {
 EditBeanForm.propTypes = {
   bean: PropTypes.object,
   onEditBean: PropTypes.func
-};
+};   
 
 export default EditBeanForm;
