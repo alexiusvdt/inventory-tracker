@@ -48,7 +48,7 @@ class BeanControl extends React.Component {
   }
 
   handleEditClick = () => {
-    console.log("HandleEditClick reached!")
+    // console.log("HandleEditClick!")
     this.setState({editing: true});
   }
 

@@ -12,13 +12,25 @@ function EditBeanForm (props) {
       {origin: event.target.origin.value},
       {price: parseInt(event.target.issue.value)},
       {roast: event.target.roast.value},
-      {stock: event.target.roast.value},
-      {id: bean.id}
+      {stock: event.target.stock.value},
+      {id: bean.id},
+      this.setState({editing: false})
+      
       // may need to go away from reusable form here or add option to only show +/- on this form
       );
   }
   return (
     <React.Fragment>
+      <div>
+      <h1>Current Bean Details</h1>
+      <ul>
+      <h3>{bean.name}</h3>
+        <li>Origin | {bean.origin}</li> 
+        <li>Roast | {bean.roast}</li>
+        <li>Price per lb | {bean.price}</li>
+        <li>Stock | {bean.stock}</li>
+      </ul>
+      </div>  
       <ReusableForm 
         formSubmissionHandler={handleEditBeanFormSubmission}
         buttonText="Update Bean" />

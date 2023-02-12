@@ -8,7 +8,7 @@ function BeanList(props){
       <hr/>
         <div style={{ padding:10, marginHorizontal:10}}>{props.beanList.map((bean) => 
           <Bean 
-            whenBeanClicked = {props.onBeanSelection}
+            whenBeanClicked = {props.onNewBeanSelection}
             name={bean.name}
             origin={bean.origin}
             roast={bean.roast}
@@ -24,7 +24,9 @@ function BeanList(props){
 
 BeanList.propTypes = {
   beanList: PropTypes.array,
-  onBeanSelection: PropTypes.func
+  onNewBeanSelection: PropTypes.func,
+
+  
 }
 
 export default BeanList;
