@@ -33,7 +33,7 @@ class BeanControl extends React.Component {
       mainBeanList: newMainBeanList,
       selectedBean: null,
       editing: false,
-      formVisibleOnPage: true
+      formVisibleOnPage: false
     });
   }
 
@@ -49,18 +49,18 @@ class BeanControl extends React.Component {
   }
 
   // modifying stock by 1 per click
-  // handleBeanSale = (selectedBean) => {
-  //   let activeBean = selectedBean;
-  //   if (activeBean.stock > 0){
-  //     activeBean.stock -=1;
-  //   } else {
-  //    stock is currently a number, make a new prop instead?
-  //     activeBean.stock = "Out of stock"
-  //   }
-  //   let newMainBeanList = this.state.mainBeanList;
-  //   newMainBeanList[this.state.stock.indexOf(selectedBean)] = activeBean;
-  //   this.setState({mainBeanList: newMainBeanList})
-  // }
+  handleBeanSale = (selectedBean) => {
+    let activeBean = selectedBean;
+    if (activeBean.stock > 0){
+      activeBean.stock -=1;
+    } else {
+    //  stock is currently a number, make a new prop instead?
+      activeBean.stock = 0
+    }
+    let newMainBeanList = this.state.mainBeanList;
+    newMainBeanList[this.state.stock.indexOf(selectedBean)] = activeBean;
+    this.setState({mainBeanList: newMainBeanList})
+  }
 
 
   handleEditClick = () => {
@@ -92,6 +92,7 @@ class BeanControl extends React.Component {
     }else if (this.state.selectedBean != null) {
       currentlyVisibleState = <BeanDetail
        bean = {this.state.selectedBean} 
+       onBeanSale = {this.handleBeanSale}
        onClickingDelete = {this.handleDeletingBean}
        onClickingEdit = {this.handleEditClick} />
       buttonText= "Return to list of beans"
@@ -99,7 +100,7 @@ class BeanControl extends React.Component {
       currentlyVisibleState = <NewBeanForm onNewBeanCreation = {this.handleAddingNewBeanToList} />
       buttonText = "Return to list of beans";
     } else {
-      currentlyVisibleState = <BeanList beanList = {this.state.mainBeanList} onNewBeanSelection={this.handleChangingSelectedBean}/>;
+      currentlyVisibleState = <BeanList beanList = {this.state.mainBeanList} onNewBeanSelection={this.handleChangingSelectedBean}  />;
       buttonText = "Add a new bag of beans";
     }
     return (

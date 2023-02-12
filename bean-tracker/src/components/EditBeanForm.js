@@ -8,12 +8,12 @@ function EditBeanForm (props) {
   function handleEditBeanFormSubmission(event){
     event.preventDefault();
     props.onEditBean(
-      {name: event.target.name.value},
-      {origin: event.target.origin.value},
-      {price: parseInt(event.target.price.value)},
-      {roast: event.target.roast.value},
-      {stock: parseInt(event.target.stock.value)},
-      {id: bean.id}
+      {name: event.target.name.value,
+      origin: event.target.origin.value,
+      price: parseInt(event.target.price.value),
+      roast: event.target.roast.value,
+      stock: parseInt(event.target.stock.value),
+      id: bean.id}
       
       // may need to go away from reusable form here or add option to only show +/- on this form
       );
