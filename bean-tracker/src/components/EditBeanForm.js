@@ -13,7 +13,7 @@ function EditBeanForm (props) {
       {price: parseInt(event.target.issue.value)},
       {roast: event.target.roast.value},
       {stock: event.target.roast.value},
-      {id: event.target.id.value}
+      {id: bean.id}
       // may need to go away from reusable form here or add option to only show +/- on this form
       );
   }
@@ -30,5 +30,6 @@ EditBeanForm.propTypes = {
   bean: PropTypes.object,
   onEditBean: PropTypes.func
 };   
+
 
 export default EditBeanForm;

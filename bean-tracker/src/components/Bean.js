@@ -7,10 +7,10 @@ function Bean(props) {
       <div onClick = {() => props.whenBeanClicked(props.id)}>
         <ul>
         <h3>{props.name}</h3>
-        <span>{props.origin}</span>
-        <span>{props.roast}</span>
-        <span>{props.price}</span>
-        <span>{props.stock}</span>
+        <span>Origin | {props.origin} <br/> </span>
+        <span>Roast | {props.roast}<br/></span>
+        <span>Price per lb | {props.price}<br/></span>
+        <span>Stock | {props.stock}<br/></span>
         </ul>
         <hr />
       </div>
@@ -25,7 +25,7 @@ Bean.propTypes = {
   roast: PropTypes.string.isRequired,
   stock: PropTypes.number.isRequired,
   id: PropTypes.string,
-  // whenBeanClicked: PropTypes.func
+  whenBeanClicked: PropTypes.func
 };
 
 export default Bean;

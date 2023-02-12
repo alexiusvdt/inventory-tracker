@@ -11,7 +11,8 @@ class BeanControl extends React.Component {
     this.state = {
       formVisibleOnPage: false,
       mainBeanList: [],
-      selectedBean: null
+      selectedBean: null,
+      editing: false
     };
   }
   handleAddingNewBeanToList = (newBean) => {
@@ -58,11 +59,12 @@ class BeanControl extends React.Component {
         selectedBean: null,
         editing: false
       });  
-    } else {}
+    } else {
     this.setState(prevState => ({
       formVisibleOnPage: !prevState.formVisibleOnPage
     }));
   }
+}
 
   render() {
     let currentlyVisibleState = null;
