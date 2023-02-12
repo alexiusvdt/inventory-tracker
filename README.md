@@ -1,8 +1,7 @@
 
 
-# Avery's "Organics"
+# Boston Bein Bois
 #### By Alex Johnson
-
 
 
 [Component Diagram](#component-diagram)
@@ -34,17 +33,18 @@
 ## Component Diagram
 ![Component Diagram](./design.png)
 
-### Running the Application
+## Setup/Installation   
 
-* `npm start`
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* Clone this repo to your workspace
+* Navigate to the root directory and open a terminal
+* Enter `npm install` to install necessary packages
+* To run the program, either enter: 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* `npm start` (this runs the app in the development mode, enabling live reloads and linting errors in the console.n the console.
 
-* `npm run build`
-Runs the application without linting errors or auto reloads
+* `npm run build` (no development features)
+
+[http://localhost:3000](http://localhost:3000)
 
 ## Known Bugs
 
