@@ -2,6 +2,13 @@ import React from "react";
 import ReusableForm from "./ReusableForm";
 import PropTypes from "prop-types";
 
+const editStyle = {
+  backgroundColor: '#ff0000',
+  display: 'flex',
+  fontFamily: 'monospace',
+  justifyContent: "space-around"
+}
+
 function EditBeanForm (props) {
   const {bean} = props;
 
@@ -18,7 +25,7 @@ function EditBeanForm (props) {
   }
   return (
     <React.Fragment>
-      <div>
+      <div style={editStyle}>
       <h1>Current Bean Details</h1>
       <ul>
       <h3>{bean.name}</h3>

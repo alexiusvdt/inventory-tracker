@@ -2,11 +2,21 @@ import React from "react";
 import Bean from "./Bean";
 import PropTypes from "prop-types";
 
+const editStyle = {
+  backgroundColor: '#808080',
+  display: 'flex',
+  fontFamily: 'monospace',
+  outlineStyle: 'outset',
+  outlineColor: 'black',
+  outlineWidth: 2,
+  justifyContent: "space-around"
+}
+
 function BeanList(props){
   return (
     <React.Fragment>
       <hr/>
-        <div style={{ padding:10, marginHorizontal:10}}>{props.beanList.map((bean) => 
+        <div style={editStyle}>{props.beanList.map((bean) => 
           <Bean 
             whenBeanClicked = {props.onNewBeanSelection}
             name={bean.name}
