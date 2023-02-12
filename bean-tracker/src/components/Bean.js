@@ -11,6 +11,7 @@ function Bean(props) {
         <span>Roast | {props.roast}<br/></span>
         <span>Price per lb | {props.price}<br/></span>
         <span>Stock | {props.stock}<br/></span>
+        <span>Sold | {props.sold}<br/></span>
         </ul>
         <hr />
       </div>

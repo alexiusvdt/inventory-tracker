@@ -17,9 +17,10 @@ function NewBeanForm(props){
     props.onNewBeanCreation({
       name: event.target.name.value,
       origin: event.target.origin.value,
-      price: parseInt(event.target.price.value),
+      price: parseFloat(event.target.price.value),
       roast: event.target.roast.value,
       stock: event.target.stock.value,
+      sold: parseInt(0),
       id: v4()
     });
   }

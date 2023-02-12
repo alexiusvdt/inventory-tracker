@@ -50,15 +50,15 @@ class BeanControl extends React.Component {
 
   // modifying stock by 1 per click
   handleBeanSale = (selectedBean) => {
-    let activeBean = selectedBean;
+    let activeBean = this.state.selectedBean;
     if (activeBean.stock > 0){
       activeBean.stock -=1;
+      activeBean.sold += 1;
     } else {
-    //  stock is currently a number, make a new prop instead?
       activeBean.stock = 0
     }
     let newMainBeanList = this.state.mainBeanList;
-    newMainBeanList[this.state.stock.indexOf(selectedBean)] = activeBean;
+    newMainBeanList[this.state.mainBeanList.indexOf(selectedBean)] = activeBean;
     this.setState({mainBeanList: newMainBeanList})
   }
 

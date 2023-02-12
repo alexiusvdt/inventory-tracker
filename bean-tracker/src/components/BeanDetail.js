@@ -13,7 +13,7 @@ function BeanDetail(props){
         <li>Roast | {bean.roast}</li>
         <li>Price per lb | {bean.price}</li>
         <li>Stock Remaining | {bean.stock}</li>
-        {/* <li>Stock Sold | {bean.sold}</li> */}
+        <li>Stock Sold | {bean.sold}</li>
       </ul>   
 
       <button onClick={( onBeanSale )}>Sell a pound of this bean!</button>
@@ -27,7 +27,8 @@ function BeanDetail(props){
 BeanDetail.propTypes = {
   bean: PropTypes.object,
   onClickingDelete: PropTypes.func,
-  onClickingEdit: PropTypes.func
+  onClickingEdit: PropTypes.func,
+  onBeanSale: PropTypes.func
 };
 
 export default BeanDetail;

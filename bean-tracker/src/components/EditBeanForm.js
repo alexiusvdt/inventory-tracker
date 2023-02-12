@@ -10,12 +10,10 @@ function EditBeanForm (props) {
     props.onEditBean(
       {name: event.target.name.value,
       origin: event.target.origin.value,
-      price: parseInt(event.target.price.value),
+      price: parseFloat(event.target.price.value),
       roast: event.target.roast.value,
       stock: parseInt(event.target.stock.value),
       id: bean.id}
-      
-      // may need to go away from reusable form here or add option to only show +/- on this form
       );
   }
   return (
@@ -28,6 +26,7 @@ function EditBeanForm (props) {
         <li>Roast | {bean.roast}</li>
         <li>Price per lb | {bean.price}</li>
         <li>Stock | {bean.stock}</li>
+        <li>Sold | {bean.sold}</li>
       </ul>
       </div>  
       <ReusableForm 
