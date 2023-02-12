@@ -32,7 +32,8 @@ class BeanControl extends React.Component {
     this.setState({
       mainBeanList: newMainBeanList,
       selectedBean: null,
-      editing: false
+      editing: false,
+      formVisibleOnPage: true
     });
   }
 
@@ -46,6 +47,21 @@ class BeanControl extends React.Component {
         selectedBean: null
       });
   }
+
+  // modifying stock by 1 per click
+  // handleBeanSale = (selectedBean) => {
+  //   let activeBean = selectedBean;
+  //   if (activeBean.stock > 0){
+  //     activeBean.stock -=1;
+  //   } else {
+  //    stock is currently a number, make a new prop instead?
+  //     activeBean.stock = "Out of stock"
+  //   }
+  //   let newMainBeanList = this.state.mainBeanList;
+  //   newMainBeanList[this.state.stock.indexOf(selectedBean)] = activeBean;
+  //   this.setState({mainBeanList: newMainBeanList})
+  // }
+
 
   handleEditClick = () => {
     // console.log("HandleEditClick!")

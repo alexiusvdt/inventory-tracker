@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types"
 
 function BeanDetail(props){
-  const { bean, onClickingDelete } = props; 
+  const { bean, onClickingDelete, onClickingEdit } = props; 
   
   return (
     <React.Fragment>
@@ -14,9 +14,9 @@ function BeanDetail(props){
         <li>Price per lb | {bean.price}</li>
         <li>Stock | {bean.stock}</li>
       </ul>   
-      
-      <button onClick={ props.onClickingEdit }>Edit this bean</button>
-      <button onClick={()=> props.onClickingDelete(bean.id) }>Delete this bean</button>
+
+      <button onClick={ onClickingEdit }>Edit this bean</button>
+      <button onClick={()=> onClickingDelete(bean.id) }>Delete this bean</button>
       <hr/>
     </React.Fragment>
   );
