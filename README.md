@@ -1,6 +1,6 @@
 
 
-# Boston Bein Bois
+# Boston Bean Bois
 #### By Alex Johnson
 
 
