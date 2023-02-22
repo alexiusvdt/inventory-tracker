@@ -19,7 +19,7 @@ function NewBeanForm(props){
       origin: event.target.origin.value,
       price: parseFloat(event.target.price.value),
       roast: event.target.roast.value,
-      stock: event.target.stock.value,
+      stock: parseInt(event.target.stock.value),
       sold: parseInt(0),
       id: v4()
     });
