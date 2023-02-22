@@ -1,6 +1,4 @@
-
-
-# Boston Bean Bois
+# Boston Bean Boys
 #### By Alex Johnson
 
 
@@ -38,19 +36,21 @@
 * Clone this repo to your workspace
 * Navigate to the root directory and open a terminal
 * Enter `npm install` to install necessary packages
+* Navigate one level down into the `bean-tracker` directory
 * To run the program, either enter: 
 
 * `npm start` (this runs the app in the development mode, enabling live reloads and linting errors in the console.n the console.
 
 * `npm run build` (no development features)
 
+The site will be available at
 [http://localhost:3000](http://localhost:3000)
 
 ## Known Bugs
 
 
 ## Thanks
- 
+ Fox Mulder
 
 ## License
 
