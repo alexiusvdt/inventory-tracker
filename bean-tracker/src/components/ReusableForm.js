@@ -19,7 +19,7 @@ function ReusableForm(props) {
           max='1000'
           name='price'
           placeholder='Cost (per lb)' />
-        <label for="roast">Choose a roast:</label>
+        <label htmlFor="roast">Choose a roast:</label>
         <select name="roast" id="roasts">
           <option value="dark">Dark</option>
           <option value="medium">Medium</option>
