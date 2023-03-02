@@ -25,6 +25,7 @@ Bean.propTypes = {
   price: PropTypes.number.isRequired,
   roast: PropTypes.string.isRequired,
   stock: PropTypes.number.isRequired,
+  sold: PropTypes.number.isRequired,
   id: PropTypes.string,
   whenBeanClicked: PropTypes.func
 };

@@ -2,12 +2,6 @@ import React from "react";
 import ReusableForm from "./ReusableForm";
 import PropTypes from "prop-types";
 
-const editStyle = {
-  backgroundColor: '#ff0000',
-  display: 'flex',
-  fontFamily: 'monospace',
-  justifyContent: "space-around"
-}
 
 function EditBeanForm (props) {
   const {bean} = props;
@@ -20,12 +14,14 @@ function EditBeanForm (props) {
       price: parseFloat(event.target.price.value),
       roast: event.target.roast.value,
       stock: parseInt(event.target.stock.value),
-      id: bean.id}
+      id: bean.id,
+      sold: bean.sold
+    }
       );
   }
   return (
     <React.Fragment>
-      <div style={editStyle}>
+      <div>
       <h1>Current Bean Details</h1>
       <ul>
       <h3>{bean.name}</h3>
