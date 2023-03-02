@@ -34,11 +34,10 @@
 ## Setup/Installation   
 
 * Clone this repo to your workspace
-* Navigate to the root directory and open a terminal
+* Navigate to the root directory, then the `bean-tracker` subdirectory and open a terminal there
 * Enter `npm install` to install necessary packages
-* Navigate one level down into the `bean-tracker` directory
 * To run the program, either enter: 
-   * `npm start` (this runs the app in the development mode, enabling live reloads and linting errors in the console.
+   * `npm start` (this runs the app in the development mode, enabling live reloads and linting errors in the console).
    * `npm run build` (no development features)
 
 The site will be available at
